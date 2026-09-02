@@ -1,4 +1,4 @@
-‏:name: RDP
+‏@HP_Sigma🚀:name: RDP
 # rdp by yamzz modifed
 on:
 workflow_dispatch:
@@ -17,8 +17,8 @@ netsh advfirewall firewall add rule name="RDP-Tailscale" dir=in action=allow pro
 Restart-Service -Name TermService -Force
 - name: Create RDP User with Secure Password
 run: |
-$username = "YamzzOfficial"
-$password = "YamzzOffical@123"
+$username = "omarkio453@g"
+$password = "Stake2000@"
 $securePass = ConvertTo-SecureString $password -AsPlainText -Force
 New-LocalUser -Name $username -Password $securePass -AccountNeverExpires
 Add-LocalGroupMember -Group "Administrators" -Member $username
